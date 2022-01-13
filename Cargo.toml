@@ -3,4 +3,8 @@ name = "zgen-macro"
 version = "0.1.0"
 edition = "2021"
 
+[features]
+derive = ["zgen-macro-derive"]
+
 [dependencies]
+zgen-macro-derive = { path = "./zgen-macro-derive", optional = true }

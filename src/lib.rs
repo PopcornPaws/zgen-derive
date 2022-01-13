@@ -21,7 +21,6 @@ max_serialized_len!(i16, 2);
 max_serialized_len!(i32, 4);
 max_serialized_len!(i64, 8);
 max_serialized_len!(i128, 16);
-max_serialized_len!([u8; 32], 32);
 // NOTE for faster compilation this is commented out
 //use solana_program::pubkey::Pubkey;
 //max_serialized_len!(Pubkey, 32);
@@ -44,7 +43,6 @@ mod test {
         assert_eq!(u32::MAX_SERIALIZED_LEN, 4);
         assert_eq!(u64::MAX_SERIALIZED_LEN, 8);
         assert_eq!(u128::MAX_SERIALIZED_LEN, 16);
-        assert_eq!(<[u8; 32]>::MAX_SERIALIZED_LEN, 32);
         assert_eq!(Option::<u8>::MAX_SERIALIZED_LEN, 2);
         assert_eq!(Option::<[u8; 32]>::MAX_SERIALIZED_LEN, 33);
     }

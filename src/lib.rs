@@ -44,6 +44,5 @@ mod test {
         assert_eq!(u64::MAX_SERIALIZED_LEN, 8);
         assert_eq!(u128::MAX_SERIALIZED_LEN, 16);
         assert_eq!(Option::<u8>::MAX_SERIALIZED_LEN, 2);
-        assert_eq!(Option::<[u8; 32]>::MAX_SERIALIZED_LEN, 33);
     }
 }
